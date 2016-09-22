@@ -1,0 +1,112 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    background-color: #383838;
+    color: white;
+    font-family: Calibri;
+    box-sizing: border-box;
+    height: 2000px;
+    padding: 20px;
+    margin: 0;
+    width: 100%;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+    transition-property: color, border-bottom;
+    transition-duration: 1s;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h1:hover, h2:hover, h3:hover {
+    color: coral;
+    border-bottom: 5px solid coral;
+}
+
+em {
+    color: burlywood;
+}
+
+ol li {
+    margin: 10px;
+}
+
+ol li a {
+    text-decoration: none;
+    color: white;
+    padding-left: 0px;
+    transition-property: padding-left;
+    transition-duration: 1s;
+}
+
+ol li a:hover {
+    color: coral;
+    padding-left: 20px;
+}
+
+.space {
+    height: 200px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.blueBox {
+    background-color: deepskyblue;
+    position: fixed;
+    left: 400px;
+    top: 400px;
+}
+
+.greenBox {
+    background-color: green;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+}
+
+.redBox {
+    background-color: red;
+    position: absolute;
+    left: 800px;
+}
+
+.greenBoxContainer {
+    padding: 10px;
+    background-color: darkslateblue;
+    position: absolute;
+    height: 200px;
+    width: 500px;
+}
+
+.yellowBox {
+    background-color: yellow;
+    color: black;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
+
+.float-left-blue-box {
+    float: left;
+    width: 30%;
+    background-color: blue;
+}
+
+.float-right-purple-box {
+    width: 30%;
+    float: right;
+    background-color: purple;
+}
+
+.content {
+    clear: both;
+}
+

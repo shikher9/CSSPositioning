@@ -1,0 +1,119 @@
+.parent {
+    height: 200px;
+    background-color: burlywood;
+    color: black;
+    padding: 20px;
+}
+
+.parent1 {
+    /*
+        Centers inline or inline-* type elements horizontally
+    */
+    text-align: center;
+}
+
+.parent2 {
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.child2 {
+    background-color: brown;
+}
+
+.parent3 {
+    text-align: center;
+}
+
+.child31 {
+    background-color: green;
+    display: inline-block;
+}
+
+.child32 {
+    background-color: red;
+    display: inline-block;
+}
+
+.parent4 {
+
+}
+
+.child4 {
+    line-height: 200px;
+    /* The white-space property specifies how white-space inside an element is handled.
+    Sequences of whitespace will collapse into a single whitespace.
+    Text will never wrap to the next line. The text continues on the same line until
+    a <br> tag is encountered */
+    white-space: nowrap;
+}
+
+.parent5 {
+    display: table;
+    height: 300px;
+}
+
+.child5 {
+    display: table-cell;
+    /*
+    Vertical Align is a property used to vertically align inline elements, but requires a table setup
+    */
+    vertical-align: middle;
+}
+
+.parent6 {
+    height: 300px;
+    position: relative;
+}
+
+.child6 {
+    background-color: crimson;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.parent7 {
+    height: 300px;
+    text-align: center;
+}
+
+.child7 {
+    line-height: 300px;
+}
+
+.parent8 {
+    height: 300px;
+    position: relative;
+}
+
+.child8 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: darkslateblue;
+}
+
+
+.parent9 {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.child91 {
+    background-color: fuchsia;
+}
+
+.child92 {
+    background-color: maroon;
+}
+

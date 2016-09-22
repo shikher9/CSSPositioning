@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../main.css">
+        <link rel="stylesheet" href="centering.css">
+        <title>Centering Elements</title>
+    </head>
+    <body>
+        <ol>
+            <li><a href="../fixedPositioning.html">Fixed Positioning</a></li>
+            <li><a href="../absolutePositioning.html">Absolute Positioning</a></li>
+            <li><a href="../relativePositioning.html">Relative Positioning</a></li>
+            <li><a href="../otherPositioning.html">Static and Inherited Positioning</a></li>
+            <li><a href="../floatPositioning.html">Float Positioning</a></li>
+            <li><a href="./centering.html">Centering Elements</a></li>
+        </ol>
+        <h1>Centering Elements</h1>
+        <h2>Centering Horizontally</h2>
+        <h3>For Inline / Inline-* elements like text, links</h3>
+        <pre>
+            Parent CSS
+            <em>
+                text-align: center;
+            </em>
+        </pre>
+        <div class="parent parent1">
+            TEXT CONTENT IN PARENT DIV (BLOCK LEVEL).
+            <a href="./centering.html">LINK</a>
+        </div>
+        <h3>For a single Block level element like a Div</h3>
+        <pre>
+            Child CSS
+            <em>
+                margin: 0 auto;
+            </em>
+        </pre>
+        <div class="parent parent2">
+            <div class="child child2">CHILD</div>
+        </div>
+        <h3>For multiple Block level elements</h3>
+        <pre>
+            Parent CSS
+            <em>
+                text-align: center;
+            </em>
+            Child CSS
+            <em>
+                display: inline-block;
+            </em>
+        </pre>
+        <div class="parent parent3">
+            <div class="child child31">CHILD 1</div>
+            <div class="child child32">CHILD 2</div>
+        </div>
+        <h2>Centering Vertically</h2>
+        <h3>Centering vertically is more challenging</h3>
+        <h3>For Inline / Inline-* elements like text, links ( Single Line )</h3>
+        <pre>
+            Child CSS - Set line height to height of the parent div and white-space to no-wrap.
+            <em>
+                line-height: 200px;
+                white-space: nowrap;
+            </em>
+        </pre>
+        <div class="parent parent4">
+            <span class="child4">Text Centered Vertically</span>
+        </div>
+        <h3>For Inline / Inline-* elements like text, links ( Multiple Line )</h3>
+        <pre>
+            Parent CSS
+            <em>
+                display: table;
+            </em>
+            Child CSS
+            <em>
+                 display: table-cell;
+                 vertical-align: middle;
+            </em>
+        </pre>
+        <div class="parent parent5">
+            <p class="child5">
+                Multi-line Text Centered Vertically
+                Multi-line Text Centered Vertically
+                Multi-line Text Centered Vertically
+                Multi-line Text Centered Vertically
+                Multi-line Text Centered Vertically
+                Multi-line Text Centered Vertically
+                Multi-line Text Centered Vertically
+                Multi-line Text Centered Vertically
+                Multi-line Text Centered Vertically
+                Multi-line Text Centered Vertically
+                Multi-line Text Centered Vertically
+                Multi-line Text Centered Vertically
+                Multi-line Text Centered Vertically
+                Multi-line Text Centered Vertically
+                Multi-line Text Centered Vertically
+            </p>
+        </div>
+        <h3>For a block level element</h3>
+        <pre>
+            Parent CSS
+            <em>
+                position: relative;
+            </em>
+            Child CSS
+            <em>
+                 position: absolute;
+                 top: 50%;
+                 transform: translateY(-50%);
+            </em>
+        </pre>
+        <div class="parent parent6">
+            <div class="child child6"></div>
+        </div>
+        <h2>Centering Horizontally and Vertically</h2>
+        <h3>For inline/inline-* elements</h3>
+        <pre>
+            Parent CSS
+            <em>
+                height: 300px;
+                text-align: center;
+            </em>
+            Child CSS
+            <em>
+                line-height: 300px;
+            </em>
+        </pre>
+        <div class="parent parent7">
+            <span class="child7">Text centered horizontally and vertically</span>
+        </div>
+        <h3>For a block level element</h3>
+        <pre>
+            Parent CSS
+            <em>
+                position: relative;
+            </em>
+            Child CSS
+            <em>
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            </em>
+        </pre>
+        <div class="parent parent8">
+            <div class="child child8"></div>
+        </div>
+        <h1>Centering Elements with FLEXBOX</h1>
+        <h3>Flexbox compatibility</h3>
+        <ol>
+            <li>Chrome => 21+</li>
+            <li>Safari => 6.1+</li>
+            <li>Firefox => 22+</li>
+            <li>Opera => 12.1+</li>
+            <li>IE => 11+</li>
+            <li>Android => 4.4+</li>
+            <li>iOS => 7.1+</li>
+        </ol>
+        <h3>Centering Vertically and Horizontally</h3>
+        <pre>
+            Parent CSS
+            <em>
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            </em>
+        </pre>
+        <div class="parent parent9">
+            <a href="#">LINK</a>
+            <div class="child child91"></div>
+            <div class="child child92"></div>
+        </div>
+        <div class="space"></div>
+    </body>
+</html>
